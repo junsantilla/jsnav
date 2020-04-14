@@ -1,6 +1,6 @@
 .jsnav-header .jsnav-header-wrapper { position: relative; }
 
-.jsnav-header .jsnav-header-wrapper .logo { padding: 30px 15px; font-family: 'Roboto',sans-serif; }
+.jsnav-header .jsnav-header-wrapper .logo { padding: 30px 15px; }
 
 .jsnav-header .jsnav-header-wrapper .jsnav-menu > ul { display: none; padding: 0 0 20px; margin-bottom: 0; }
 
@@ -16,7 +16,7 @@
 
 .jsnav-header .jsnav-header-wrapper .jsnav-menu li > ul { display: none; }
 
-.burger-menu { position: absolute; padding-top: 7px; top: 35px; right: 15px; cursor: pointer; width: 20px; height: 15px; }
+.burger-menu { position: absolute; padding-top: 7px; top: 35px; right: 30px; cursor: pointer; width: 20px; height: 15px; }
 
 .hamburger { margin-top: 7px; }
 
@@ -54,4 +54,4 @@
   .jsnav-header .jsnav-header-wrapper .jsnav-menu li > ul > .dropdown_menu::after { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); border: solid #c1c1c1; border-width: 0 3px 3px 0; padding: 2px; content: ''; margin-bottom: 3px; text-align: right; position: absolute; right: 27px; top: 19px; }
   .jsnav-header .jsnav-header-wrapper .jsnav-menu li:hover > ul { opacity: 1; visibility: visible; }
   .dropdown-plus { display: none; } }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=jsnav.css.map */

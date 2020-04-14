@@ -1,139 +1,104 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jsnav</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JSnav | A responsive multi-level navigation menu. </title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+		<style> body {font-family: 'Roboto',sans-serif;} </style>
 
-	<link rel="stylesheet" href="style.css"> 
-	
-</head>
-<body>
-
-	<!-- Header -->
-	<div class="jsnav-header bg-light sticky-top">
-		<div class="container">
-
-			<!-- jsnav header -->
-			<div class="jsnav-header-wrapper">
-				
-				<!--Logo-->
-                <div class="logo">
-                	<a href="#">jsnav</a>
-				</div>
-				
-				<!-- Burger menu -->
+		<link rel="stylesheet" href="jsnav.css">
+	</head>
+	<body>
+		<div class="jsnav-header bg-light sticky-top">
+			<div class="jsnav-header-wrapper container">
+				<div class="logo font-weight-bold">
+					<a href="#">DEMO</a>
+				</div> <!-- .logo -->
 				<div class="burger-menu">
 					<div class="hamburger-inner"></div>
-				</div>
-
-				<!--Navigation menu-->
-                <nav class="jsnav-menu">
-                	<ul>
-                    	<li class="current-menu"><a href="#">Home</a>
-                        	<ul>
-                            	<li><a href="#">Dropdown menu</a></li>
-								<li><a href="#">Dropdown menu</a></li>
-								<li><a href="#">Dropdown menu</a></li>
-                                <li><a href="#">Dropdown menu</a>
-                                	<ul>
-                                    	<li><a href="#">Dropdown menu</a></li>
-                                        <li><a href="#">Dropdown menu</a></li>
-										<li><a href="#">Dropdown menu</a></li>
-										<li><a href="#">Dropdown menu</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-						<li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Contact Us</a>
+				</div><!-- .burger-menu -->
+				<nav class="jsnav-menu">
+					<ul>
+						<li class="current-menu">
+							<a href="#">Home</a>
 							<ul>
-                            	<li><a href="#">Dropdown menu</a></li>
 								<li><a href="#">Dropdown menu</a></li>
 								<li><a href="#">Dropdown menu</a></li>
-                                <li><a href="#">Dropdown menu</a></li>
-                            </ul>
+								<li>
+									<a href="#">Dropdown menu</a>
+									<ul>
+										<li><a href="#">Dropdown menu</a></li>
+										<li><a href="#">Dropdown menu</a></li>
+										<li><a href="#">Dropdown menu</a></li>
+									</ul>
+								</li>
+							</ul>
 						</li>
-                    </ul>
-                </nav>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Portfolio</a>
+						<li>
+							<a href="#">Services</a>
+							<ul>
+								<li><a href="#">Dropdown menu</a></li>
+								<li><a href="#">Dropdown menu</a></li>
+								<li><a href="#">Dropdown menu</a></li>
+								<li><a href="#">Dropdown menu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</nav> <!-- nav -->
+			</div> <!-- .jsnav-header-wrapper -->
+		</div> <!-- .jsnav-header -->
 
-			</div>
-
-		</div>
-	</div>
-
-		  
-	<div class="jumbotron mb-0 pt-5 pb-5">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-        </div>
-    </div>
-
-	<div class="container mt-5 mb-5">
-        <!-- Example row of columns -->
-		<div class="row mb-5 text-center">
-			<div class="col-md-12"><h2>Features</h2></div>
-		</div>
-		
-		  
-        <div class="row mb-5">
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    
-          </div>
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-     
-          </div>
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-         
-          </div>
-		  
-		</div>
-		<div class="row ">
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            
-          </div>
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          
-          </div>
-          <div class="col-md-4">
-		  <h3 class="h5">Heading</h3>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        
-          </div>
-		  
-        </div>
-
-
-	  </div>
-	
-	<div class="container-fluid bg-light pt-4 pb-2">
-		<div class="row">
-			<div class="col-md-12 text-center font-weight-bold">
-				<p>© <a href="https://junsantilla.github.io/jsnav/">junsantilla.github.io/jsnav</a> All rights reserved.</p>
+		<div class="jumbotron mb-0 pt-5 pb-5">
+			<div class="container text-center">
+				<h1 class="display-3">JSnav</h1>
+				<p>A responsive and multi-level navigation menu <br>created with HTML, SCSS, and a little bit of jQuery for the mobile view.</p>
+				<p><a class="btn btn-primary btn-lg rounded-0" href="https://github.com/junsantilla/jsnav/" role="button" target="_blank">GitHub</a> <a class="btn btn-primary btn-lg rounded-0" href="https://github.com/junsantilla/jsnav/archive/master.zip" role="button" target="_blank">Download</a>
 			</div>
 		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/menu.js"></script> <!-- jsnav navigation jQuery -->
-
-</body>
+		<div class="container mt-5 mb-5">
+			<div class="row mb-5 text-center">
+				<div class="col-md-12">
+					<h2 class="font-weight-bold">Features</h2>
+				</div>
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-3">
+					<ion-icon name="options-outline" class="h1"></ion-icon>
+					<h3 class="h5 font-weight-bold">Easy to Customize</h3>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+				<div class="col-md-3">
+					<ion-icon name="phone-portrait-outline" class="h1"></ion-icon>
+					<h3 class="h5 font-weight-bold">Mobile Responsive</h3>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+				<div class="col-md-3">
+					<ion-icon name="thumbs-up-outline" class="h1"></ion-icon>
+					<h3 class="h5 font-weight-bold">Code Quality</h3>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+				<div class="col-md-3">
+					<ion-icon name="nuclear-outline" class="h1"></ion-icon>
+					<h3 class="h5 font-weight-bold">Support</h3>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-light pt-4 pb-2">
+			<div class="row">
+				<div class="col-md-12 text-center font-weight-bold">
+					<p>© <a href="https://junsantilla.github.io/jsnav/">junsantilla.github.io/jsnav</a> All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+		<script src="js/menu.js"></script><!-- jsnav navigation jQuery -->
+	</body>
 </html>
