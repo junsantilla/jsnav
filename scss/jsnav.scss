@@ -1,10 +1,30 @@
+// Settings
+$max-width              : 1200px;
+$height                 : 90px;
+$background-color       : white;
+$font-color             : #212529;
+$font-size              : 16px;
+$float-nav-desktop      : right;
+$font-weight            : normal;
+$text-transform         : capitalize;
+
 .jsnav-header {
+    background-color: $background-color;
     .jsnav-header-wrapper {
         position: relative;
+        font-size: $font-size;
         .logo {
-            padding: 30px 15px;
+            padding: 0 25px;
+            line-height: $height;
+            text-transform: $text-transform;
+            font-weight: $font-weight;
+            a  {
+                color: $font-color;
+            }
         }
         .jsnav-menu {
+            text-transform: $text-transform;
+            font-weight: $font-weight;
             > ul {
                 display: none;
                 padding: 0 0 20px;
@@ -16,10 +36,10 @@
                     position: relative;
                     > a {
                         display: block;
-                        padding: 14px 15px;
-                        font-size: 15px;
+                        padding: 15px;
                         text-decoration: none;
                         transition: all 0.15s ease-in-out;
+                        color: $font-color;
                     }
                 }
                 ul {
@@ -102,25 +122,32 @@
         display: none;
     }
 }
+
 @media (min-width:1200px) {
     .jsnav-header {
         .jsnav-header-wrapper {
-            height: 90px;
+            max-width: $max-width;
+            height: $height;
+            margin: 0 auto;
+
             .logo {
                 float: left;
-                padding: 30px 40px 30px 0;
+                padding: 0 25px;
             }
             .burger-menu {
                 display: none;
             }
             .jsnav-menu {
-                float: right;
-                clear: inherit;
+                float: $float-nav-desktop;
+                
                 > ul {
                     display: block !important;
                     padding: 0;
-                    font-size: 0;
+                
                     > .dropdown_menu {
+                        a   {
+                            padding-right: 35px;
+                        }
                         &::after {
                             transform: rotate(45deg);
                             -webkit-transform: rotate(45deg);
@@ -128,11 +155,10 @@
                             border-width: 0 3px 3px 0;
                             padding: 2px;
                             content: '';
-                            margin-bottom: 3px;
-                            text-align: right;
                             position: absolute;
-                            right: 7px;
-                            top: 40px;
+                            right: 20px;
+                            height: calc($height - 50%);
+                            top: calc(50% - 5px);
                         }
                     }
                     > li {
@@ -140,9 +166,8 @@
                         > a {
                             position: relative;
                             box-sizing: border-box;
-                            height: 90px;
                             padding: 0 25px;
-                            line-height: 90px;
+                            line-height: $height;
                             white-space: nowrap;
                         }
                     }
@@ -161,9 +186,9 @@
                 }
                 li {
                     > ul {
-                        background: #F8F9FA;
+                        background: $background-color;
                         position: absolute;
-                        top: 100%;
+                        top: calc(100% + 1px);
                         left: 0;
                         display: block !important;
                         width: 250px;
