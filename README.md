@@ -63,5 +63,4 @@ After installing, simply add this navigation menu section to the ``<body>`` of y
 ```
 
 ## License
-
-Fork Corner is licensed under MIT - <https://opensource.org/licenses/MIT>
+jsnav is licensed under MIT - <https://opensource.org/licenses/MIT>
