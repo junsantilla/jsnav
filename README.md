@@ -14,7 +14,7 @@ Add it directly to your webpage using a CDN:
 
 ## Usage
 
-After installing, simply add this navigation menu section to the <body> of your webpage:
+After installing, simply add this navigation menu section to the ``<body>`` of your webpage:
 
 ```html
 <div class="jsnav-header">
