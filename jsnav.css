@@ -1,4 +1,4 @@
-.jsnav-header { background-color: white; }
+.jsnav-header { background-color: white; top: 0; position: -webkit-sticky; position: sticky; }
 
 .jsnav-header .jsnav-header-wrapper { position: relative; font-size: 16px; }
 
